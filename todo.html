@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">    <title>Document</title>
+    <link rel="stylesheet" href= "todo.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body onload="myClick();">
+    <header>
+        <!-- <div id="logout "> -->
+            <a href="todo.html">TODO List</a>   
+        <!-- </div>
+
+        <div id="todos"> -->
+            <a href="index.html">Logout</a>
+        <!-- </div> -->
+     </header> 
+    <div id="myDIV" class="heads">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+    <!-- <button id="submit" onclick="myClick();">Click</button> -->
+    <div id="container" class="container mx-auto p-3 " style="overflow-y: scroll;"></div>
+
+</body>
+<script src="todo.js"></script>
+</html>

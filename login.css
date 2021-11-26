@@ -1,0 +1,73 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(./todo.jpg);
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat;
+}
+.loginbox{
+    width: 320px;
+    height: 390px;
+    /* border-radius: 40px; */
+    color: white;
+    background-color: black;
+    opacity: 70%;
+    position:absolute;
+    top: 25%;
+    left: 38%;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+h1{
+    padding-top:30px;
+    text-align: center;
+    color:white;
+    opacity: 100%;
+}
+  .loginbox label{
+      font-weight: bold;
+      font-size: 16px;
+  }
+
+  .loginbox input{
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 7px;
+  }
+
+  .loginbox input[type="name"], input[type="password"]{
+      border:none;
+      border-bottom:1px solid white;
+      background: transparent;
+      outline: none;
+      color: white;
+      font-size: 16px;
+  }
+  .loginbox input[type="submit"]{
+      transform: translate(95%);
+      background-color: white;
+      opacity: 100%;
+      border: none;
+      height: 40px;
+      border-radius: 30px;
+      width: 110px;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px;
+  }
+  .loginbox input[type="submit"]:hover{
+    color:red;
+    background-color: burlywood;
+  }
+  .loginbox a{
+      text-decoration: none;
+      color:white;
+      font-size: 12px;
+  }
+  .loginbox a:hover{
+    color:blueviolet;
+  }
+ 
