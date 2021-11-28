@@ -7,6 +7,7 @@ body{
     background-position: absolute;
     background-repeat: no-repeat;
 }
+
 header{
   background-color:lightslategrey;
   height: 60px;
@@ -16,6 +17,9 @@ header a{
   text-decoration: none;
   font-weight: bold;
   padding-left: 20px;
+  display:inline-block; 
+  padding-top:20px;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -24,17 +28,16 @@ header a{
   box-sizing: border-box;
 }
 
-/* Remove margins and padding from the list */
 ul {
-  width: 43%;
-  margin-left: 27%;
+  width: 48.5%;
+  margin-left: 25%;
 }
 
 /* Style the list items */
 ul li {
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  padding: 12px 8px 12px 5px;
   list-style-type: none;
   background: #eee;
   font-size: 16px;
@@ -76,9 +79,9 @@ ul li:hover {
   padding: 20px 40px;
   color: white;
   text-align: center;
-  width: 39.5%;
-  margin-left: 29.7%;
-  margin-top: 1%;
+  width: 45%;
+  margin-left:27.8%;
+  margin-top: 0.8%;
 }
 
 /* Clear floats after the header */
@@ -128,4 +131,9 @@ input {
   text-decoration: line-through;
   color: rgba(0, 0, 0, 0.3);
   
+}
+/* style for Logout link in header */
+#second{
+  float: right;
+  padding-right: 20px;
 }
