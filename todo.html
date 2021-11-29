@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">    <title>Document</title>
+    <meta name="HandheldFriendly" content="true">    
+    <title>To-do list</title>
     <link rel="stylesheet" href= "todo.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
@@ -13,13 +14,14 @@
             <a id="first" href="todo.html">To do List</a>   
             <a id="second" href="index.html">Logout</a>
      </header> 
+    <div class="main">
     <div id="myDIV" class="heads">
         <h2>My To Do List</h2>
         <input type="text" id="myInput" placeholder="Title...">
         <span onclick="newElement()" class="addBtn">Add</span>
     </div>
-    <div id="container" class="container mx-auto p-3 " style="overflow-y: scroll;"></div>
-
+    <div id="container" class="container mx-auto p-3 " ></div>
+    </div>
 </body>
 <script src="todo.js"></script>
 </html>

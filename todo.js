@@ -17,9 +17,10 @@ function myClick(){
           var response = JSON.parse(this.responseText);
           var output = "";
           for(var i=0; i<response.length;i++){
-              output += "<li id='li' class><input class='check' type='checkbox'><label>"+response[i].title+
+              output += "<li id='li' class><input class='check' id='chk' onclick='countbox()' type='checkbox'><label>"+response[i].title+
   "</label><span class='close'>×</span></li>"
             }
+
           // Click on a close button to hide the current list item
           document.getElementById("container").innerHTML ="<ul id='myUL'>"+output+"</ul>";
           var close = document.getElementsByClassName("close");
@@ -29,13 +30,13 @@ function myClick(){
               var div = this.parentElement;
               div.style.display = "none";
             }
-          }
+          }       
         }      
   }
   xhttp.open("GET",'https://jsonplaceholder.typicode.com/todos',true);
-  xhttp.send();
-  
+  xhttp.send();  
 }
+
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
@@ -46,6 +47,7 @@ function newElement() {
   var label = document.createElement("label");
   checkbox.setAttribute("type","checkbox");
   checkbox.setAttribute("class","check");
+  checkbox.setAttribute("onclick","isChecked()");
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
@@ -63,7 +65,7 @@ function newElement() {
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
-          var close = document.getElementsByClassName("close");
+  var close = document.getElementsByClassName("close");
 
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
@@ -71,7 +73,14 @@ function newElement() {
       div.style.display = "none";
     }
   }
-  
+}
 
+// alert when 5 items are checked
+
+  function countbox(){
+  var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+  if (checkboxes.length == 5) {
+    alert(' Congrats. 5 Tasks have been Successfully Completed');
+  } 
 }
 

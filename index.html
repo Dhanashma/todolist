@@ -1,27 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">    <title>Login</title>
-    <link rel="stylesheet" href="login.css  ">
-    
-</head>
-<body>
-    <div class="loginbox">
-    <form onsubmit="validate(loginpage);">
-        <h1> Login </h1>
-         <br>
-        <input type="name" placeholder="Username" id="u_name">   
-        <input type="password" placeholder="Password" id="pwd">
-        <input type="submit" value="Login" id="submit">
-        <br>
-        <a href="#"> Forgot password? </a>
+<!doctype html>
+	<html>
+	<head>
+	<meta charset="utf-8">
+	<!-- responsive meta tag to tell the browser to adjust the page automatic according to screen size -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page </title>
+    <link rel="stylesheet" href="login.css">
+	</head>
 
-     
-    </form>
-    </div>
-     <script src="login.js"></script>
-</body>
-</html>
+	<body>
+	<form onsubmit="validate(loginpage);">
+	<div class="main-container">
+	<div class="login-box">
+		<div class="header">
+			<h2>Login</h2>
+		</div>
+		<div class="login">
+			<div class="form-control1">
+				<input type="text" placeholder="username" class="tbox"  id="u_name"/>
+			</div>
+			<div class="form-control1">
+				<input type="password" placeholder="password" class="tbox" id="pwd"/>
+			</div>
+			<div class="form-control1">
+				<input type="submit" value="Login Now" class="btn" id="submit"/>
+			</div>
+			<div class="forget-box">
+				<a href="#" class="link">forgot password?</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	</form>
+	<script src="login.js"></script>
+	</body>
+ </html>

@@ -1,73 +1,83 @@
 body{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    background-image: url(./todo.jpg);
-    background-size: cover;
-    background-position: absolute;
-    background-repeat: no-repeat;
+	background-color: #f5f5f5; 
+	font-family: Arial;
 }
-.loginbox{
-    width: 320px;
-    height: 390px;
-    /* border-radius: 40px; */
-    color: white;
-    background-color: black;
-    opacity: 70%;
-    position:absolute;
-    top: 25%;
-    left: 38%;
-    padding-left: 28px;
-    padding-right: 28px;
-}
-h1{
-    padding-top:30px;
-    text-align: center;
-    color:white;
-    opacity: 100%;
-}
-  .loginbox label{
-      font-weight: bold;
-      font-size: 16px;
-  }
-
-  .loginbox input{
-      width: 100%;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      padding-bottom: 7px;
-  }
-
-  .loginbox input[type="name"], input[type="password"]{
-      border:none;
-      border-bottom:1px solid white;
-      background: transparent;
-      outline: none;
-      color: white;
-      font-size: 16px;
-  }
-  .loginbox input[type="submit"]{
-      transform: translate(95%);
-      background-color: white;
-      opacity: 100%;
-      border: none;
-      height: 40px;
-      border-radius: 30px;
-      width: 110px;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 10px;
-  }
-  .loginbox input[type="submit"]:hover{
-    color:red;
-    background-color: burlywood;
-  }
-  .loginbox a{
-      text-decoration: none;
-      color:white;
-      font-size: 12px;
-  }
-  .loginbox a:hover{
-    color:blueviolet;
-  }
- 
+	
+	.main-container{
+		display: flex; 
+		justify-content: center;
+	}
+	
+	.login-box{
+		border-radius: 4px; 
+		background-color: #fff; 
+		width: 450px; 
+		box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; 
+		margin-top: 50px;
+	}
+	
+	.header{
+		background-size: cover; 
+		background-color:  #f44336;
+		height: 130px; 
+		border-top-left-radius: 4px; 
+		border-top-right-radius: 4px; 
+		display: flex; 
+		justify-content: flex-start; 
+		padding-left: 20px; 
+		align-items: center;	
+		color: #f5f5f5;
+	}
+		
+	.tbox{
+		width: 97.33%; 
+		height: 45px; 
+		padding-left: 10px; 
+		border-radius: 3px; 
+		border: 1px solid #f1f1f1; 
+		margin-bottom: 10px; 
+		outline: none; 
+		font-size: 0.9rem;
+		transition: 0.6s; 
+		color: #333; 
+	}
+	 
+	.tbox:focus{
+		border: 1px solid#f44336; 
+		transition: 0.6s; 
+		color: black;
+	}
+	.login{
+		margin: 15px 20px;
+	}
+	
+	.btn{
+		border: 1px solid #f5f5f5; 
+		width: 100%; 
+		padding: 15px 0; 
+		border-radius: 4px; 
+		margin-top: 10px; 
+		margin-bottom: 10px; 
+		background-color: #555; 
+		color: #f5f5f5; 
+		font-size: 1.2rem; 
+		outline: none; 
+		transition: 0.6s;
+	}
+	.btn:hover{
+		background-color: #333; 
+		transition: 0.6s;
+	}
+	
+	.forget-box{
+		text-align: center;
+	}
+	
+	.link{
+		color: #f44336;
+		text-decoration: none;
+	}
+	.link:hover{
+		color: #333;
+		transition: 0.6s;
+	}
